@@ -1,7 +1,7 @@
 public class PrivateTest {
     public static void main(String[] args) {
         Person person = new Person();
-        person.setAge(45);
+        person.setAge(-1);
         person.setName("张飞");
         person.talk();
     }
@@ -17,6 +17,9 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+        if (age < 0) {
+            System.out.println("年龄设置错误");
+        }
     }
 
     public String getName() {
