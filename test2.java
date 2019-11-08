@@ -8,6 +8,13 @@ public class Main {
         arr.add("we");
         arr.add("are");
         arr.add("Linuxer");
+        ArrayList arr1 = new ArrayList(10);
+        arr1.add("hello");
+        arr1.add("world");
+        arr1.add("we");
+        arr1.add("are");
+        arr1.add("Linuxer");
+        System.out.println(arr.equals(arr1));
         System.out.println(arr);
     }
 }
@@ -49,7 +56,7 @@ public class ArrayList {
 
         return str;
     } */
-
+   
     public String toString() {
         String str = "";
         for (int i = 0; i < next; i++) {
@@ -58,5 +65,17 @@ public class ArrayList {
         }
 
         return str;
+    }
+
+    public boolean equals(ArrayList arr) {
+        if (this.size() != arr.size()) {
+            return false; 
+        }
+        for (int i = 0; i < arr.list.length; i++) {
+                
+        
+        }
+
+        return true;
     }
 }
