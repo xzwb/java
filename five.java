@@ -96,7 +96,7 @@ public class Main {
                 for (int j = 0; j < 25; j++) {
                     if (pieces[i][j] == "&") {
                         if (count(pieces, i, j, "&")) {
-                            return true;
+                           return true;
                         }
                     }
                 }
@@ -121,7 +121,7 @@ public class Main {
         int cont = 0;
         int trow = row;
         int tcol = col;
-        while (trow < 25 && tcol < 25 && trow > 0 && tcol > 0 && pieces[trow][tcol] == piece )  {
+        while (trow < 25 && tcol < 25 && trow >= 0 && tcol >= 0 && pieces[trow][tcol] == piece )  {
             cont++;
             trow--;
         }
@@ -130,7 +130,7 @@ public class Main {
         } else { 
             return true;
         }
-        while (trow < 25 && tcol < 25 && trow > 0 && tcol > 0 && pieces[trow][tcol] == piece)  {
+        while (trow < 25 && tcol < 25 && trow >= 0 && tcol >= 0 && pieces[trow][tcol] == piece)  {
             cont++;
             trow++;
         }
@@ -140,7 +140,7 @@ public class Main {
         } else {
             return true;
         }
-        while (trow < 25 && tcol < 25 && trow > 0 && tcol > 0 && pieces[trow][tcol] == piece )  {
+        while (trow < 25 && tcol < 25 && trow >= 0 && tcol >= 0 && pieces[trow][tcol] == piece )  {
             cont++;
             tcol--;
         }
@@ -149,7 +149,7 @@ public class Main {
         } else {
             return true;
         }
-        while (trow < 25 && tcol < 25 && trow > 0 && tcol > 0 && pieces[trow][tcol] == piece)  {
+        while (trow < 25 && tcol < 25 && trow >= 0 && tcol >= 0 && pieces[trow][tcol] == piece)  {
             cont++;
             tcol++;
         }
@@ -159,7 +159,7 @@ public class Main {
         } else {
             return true;
         }
-        while (trow < 25 && tcol < 25 && trow > 0 && tcol > 0 && pieces[trow][tcol] == piece )  {
+        while (trow < 25 && tcol < 25 && trow >= 0 && tcol >= 0 && pieces[trow][tcol] == piece )  {
             cont++;
             tcol++;
             trow++;
@@ -170,7 +170,7 @@ public class Main {
         } else {
             return true;
         }
-        while (trow < 25 && tcol < 25 && trow > 0 && tcol > 0 && pieces[trow][tcol] == piece )  {
+        while (trow < 25 && tcol < 25 && trow >= 0 && tcol >= 0 && pieces[trow][tcol] == piece )  {
             cont++;
             tcol--;
             trow--;
@@ -184,7 +184,7 @@ public class Main {
         }else { 
             return true;
         }
-        while (trow < 25 && tcol < 25 && trow > 0 && tcol > 0 && pieces[trow][tcol] == piece )  {
+        while (trow < 25 && tcol < 25 && trow >= 0 && tcol >= 0 && pieces[trow][tcol] == piece )  {
             cont++;
             tcol--;
             trow++;
@@ -195,7 +195,7 @@ public class Main {
         } else {
             return true;
         }
-        while (trow < 25 && tcol < 25 && trow > 0 && tcol > 0 && pieces[trow][tcol] == piece )  {
+        while (trow < 25 && tcol < 25 && trow >= 0 && tcol >= 0 && pieces[trow][tcol] == piece )  {
             cont++;
             tcol++;
             trow--;
